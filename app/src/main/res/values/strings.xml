@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EQuakeStarterCode</string>
+    <string name="map_key">AIzaSyACYqZvfGtH9tF7CvXi0RYflK03OuBe87I</string>
+
+    <string-array name="filterNames">
+        <item>Northerly</item>
+        <item>Southerly</item>
+        <item>Westerly</item>
+        <item>Easterly</item>
+        <item>Largest Magnitude</item>
+        <item>Deepest</item>
+        <item>Shallowest</item>
+    </string-array>
+</resources>

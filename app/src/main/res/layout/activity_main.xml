@@ -1,0 +1,136 @@
+<!--ZYGIMANAS DOMARKAS S1718169-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#071e3d"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        tools:context=".MapsActivity" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:background="#1f4287"
+        android:backgroundTint="#1f4287"
+        android:text="Press to get data"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/zoomIn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:onClick="onZoom"
+            android:text="Zoom In"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/zoomOut"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="onZoom"
+            android:text="Zoom Out"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_filter_by_northerly"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Filter by northerly"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_filter_by_southerly"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Filter by southerly"
+            android:textSize="12sp" />
+
+
+        <Button
+            android:id="@+id/btn_filter_by_westerly"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Filter by westerly"
+            android:textSize="12sp" />
+
+
+        <Button
+            android:id="@+id/btn_filter_by_easterly"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:text="Filter by easterly"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_filter_by_magnitude"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Filter by strongest"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_filter_by_deepest"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="Filter by deepest"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_filter_by_shallowest"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="100dp"
+            android:text="Filter by shallowest"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_filter_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Filter by date"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/acknowledgement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Contains British Geological Survey materials ©NERC 2019"
+        android:textColor="#FFF"
+        android:textSize="12sp"/>
+
+</LinearLayout>
